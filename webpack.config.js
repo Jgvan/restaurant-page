@@ -10,19 +10,19 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][contenthash].js",
         clean: true,
-        assetModuleFilename: "[name][ext]",
+        assetModuleFilename: "assets/[name][ext]",
     },
-    devtool: "source-map",
+    devtool: "inline-source-map",
     devServer: {
         static: {
-          directory: path.resolve(__dirname, "dist"),
+            directory: path.resolve(__dirname, "dist"),
         },
         port: 3000,
         open: true,
         hot: true,
         compress: true,
         historyApiFallback: true,
-      },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Restaurant Page",
@@ -30,4 +30,12 @@ module.exports = {
             template: "src/template.html",
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 }
