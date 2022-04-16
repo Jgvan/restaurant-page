@@ -14,11 +14,21 @@ export default function renderHeader() {
     return header;
 }
 
-function createHeaderLink(linkText, linkClass) {
+function createHeaderLink(linkText, linkId) {
     const listItem = document.createElement("li");
 
     listItem.appendChild(document.createTextNode(linkText));
-    listItem.classList.add(linkClass);
+    listItem.id = linkId;
 
     return listItem;
+}
+
+export function updateHeaderButton(newBtn) {
+    //remove selected class from previous button and add to last clicked button
+    const oldBtn = document.querySelector("selected");
+    if(oldBtn) {
+        oldBtn.classList.remove("selected");
+    }
+
+    document.getElementById(newBtn).classList.add("selected");
 }
