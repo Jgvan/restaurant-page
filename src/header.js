@@ -25,10 +25,11 @@ function createHeaderLink(linkText, linkId) {
 
 export function updateHeaderButton(newBtn) {
     //remove selected class from previous button and add to last clicked button
-    const oldBtn = document.querySelector("selected");
-    if(oldBtn) {
+    
+    const oldBtn = document.querySelector(".selected");
+    if(oldBtn){
         oldBtn.classList.remove("selected");
     }
-
+    
     document.getElementById(newBtn).classList.add("selected");
 }
