@@ -29,7 +29,6 @@ function aboutUs() {
     const unsplash = document.createElement("a");
     unsplash.href = "https://unsplash.com/";
     unsplash.textContent = "Unsplash";
-    unsplash.style.color = "White";
     unsplash.target = "_blank"
     credits.appendChild(unsplash);
 

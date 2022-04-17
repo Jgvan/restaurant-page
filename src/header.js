@@ -1,6 +1,6 @@
 export default function renderHeader() {
     const header = document.createElement("div");
-    header.classList.add("header");
+    header.id = "header";
 
     const headerLinks = document.createElement("ul");
     headerLinks.classList.add("header-links");

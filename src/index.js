@@ -3,11 +3,13 @@ import renderHeader from "./header";
 import renderHomePage from "./home";
 import renderMenu from "./menu";
 import renderAboutPage from "./about";
+import renderFooter from "./footer";
 
 const content = document.getElementById("content");
 
 document.body.insertBefore(renderHeader(), content);
 renderHomePage();
+document.body.appendChild(renderFooter());
 
 function addEventListeners() {
     const homeBtn = document.getElementById("home");

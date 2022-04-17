@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #content,
-.header {
+#header {
     width: 75vw;
     margin: 0 auto 0 auto;
     background-color: rgba(42, 39, 43, 0.8);
@@ -26,8 +26,18 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
 
-.header {
+#header {
     margin-bottom: 70px;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(145, 47, 47);
+    padding: 10px;
+    font-size: 1.1rem;
 }
 
 .header-links {
@@ -98,4 +108,8 @@ h1, h2, h3, h4, h5, h6, p {
 .map iframe {
     display: block;
     margin: 25px auto 25px auto;
+}
+
+a {
+    color: #ffffff;
 }
