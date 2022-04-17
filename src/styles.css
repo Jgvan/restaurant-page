@@ -59,11 +59,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home-text *,
-.menu-header * {
+.menu-header *,
+.about-text {
     margin: 10px 100px 10px 100px;
 }
 
-.home-text p {
+.about-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home-text p,
+.about-text p {
     line-height: 1.6;
 }
 
@@ -86,4 +93,9 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-item img {
     height: 400px;
     padding: 25px;
+}
+
+.map iframe {
+    display: block;
+    margin: 25px auto 25px auto;
 }
