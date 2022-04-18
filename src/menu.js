@@ -5,7 +5,7 @@ import ribs from "./assets/img/jason-leung-WJphLztU4eY-unsplash.jpg";
 import chicken from "./assets/img/ivana-cajina-qvQdLikf7wk-unsplash.jpg";
 
 export default function renderMenu() {
-    const content = document.getElementById("content")
+    const content = document.getElementById("content");
     const menu = document.createElement("div");
 
     menu.classList.add("menu");
